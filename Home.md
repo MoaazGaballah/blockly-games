@@ -1,3 +1,3 @@
-# Wiki Pages
+## Blockly Games Wiki
 
 * [[Build]]
