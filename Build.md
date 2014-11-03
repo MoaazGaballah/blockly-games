@@ -1,5 +1,3 @@
-# Build
-
 Blockly Games needs to be built before it may be run.  This is in contrast with [Blockly](https://github.com/google/blockly/) which includes compiled binaries checked into the repository.  
 
 ## Get the Code
@@ -45,7 +43,7 @@ In this case you need to edit `closure-templates/build.xml` and change all four 
                 debug="${includeDebugInfo}">
            <classpath refid="classpath.path" />
 
-Rerun "`make deps`", and everything should build properly.
+Rerun `make deps`, and everything should build properly.
 
 ## Build English
 
@@ -73,7 +71,7 @@ While developing a game, it is nice to be able to quickly recompile only the Eng
     make pond-basic-en
     make pond-advanced-en
 
-The previously mentioned "`make en`" is just a shortcut for all the above commands.
+The previously mentioned `make en` is just a shortcut for all the above commands.
 
 ## Test Locally
 
