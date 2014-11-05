@@ -2,7 +2,17 @@ Blockly Games needs to be built before it may be run.  This is in contrast with 
 
 ## Get the Code
 
-First, download the source code.  Go to this project's [home page](https://github.com/google/blockly-games) to get a copy of the code using Git, Subversion, or a ZIP.
+First, download the source code.  Git is the easiest:
+
+    git clone https://github.com/google/blockly-games.git
+
+Or use Subversion:
+
+    svn checkout https://github.com/google/blockly-games
+
+Or just download a ZIP:
+
+    https://github.com/google/blockly-games/archive/master.zip
 
 ## Get the Dependencies
 
@@ -13,10 +23,10 @@ Enter the Blockly Games directory you just created, and attempt to get and build
 
 If this works, great!  But it will probably die with this error:
 
-    [javac] Compiling 375 source files to /home/fraser/blockly-games/closure-templates/build/classes
+    [javac] Compiling 375 source files to /home/fraser/blockly-games/closure-templates-read-only/build/classes
     [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
 
-In this case you need to edit `closure-templates/build.xml` and change all four instances of "1.6" to "1.7".  Here is the patch:
+In this case you need to edit `closure-templates-read-only/build.xml` and change all four instances of "1.6" to "1.7".  Here is the patch:
 
     --- build.xml	(revision 28)
     +++ build.xml	(working copy)
