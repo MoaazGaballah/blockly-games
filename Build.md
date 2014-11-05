@@ -1,4 +1,4 @@
-Blockly Games needs to be built before it may be run.  This is in contrast with [Blockly](https://github.com/google/blockly/) which includes compiled binaries checked into the repository.  
+Developers of Blockly Games need to build the project in order to make changes.
 
 ## Get the Code
 
