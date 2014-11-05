@@ -12,7 +12,7 @@ Or use Subversion:
 
 Or just download a ZIP:
 
-    https://github.com/google/blockly-games/archive/master.zip
+    [https://github.com/google/blockly-games/archive/master.zip]
 
 ## Get the Dependencies
 
