@@ -2,7 +2,7 @@ Got limited or unreliable Internet?  You can download a full copy of Blockly Gam
 
 https://github.com/google/blockly-games/blob/master/blockly-games.zip?raw=true
 
-Unzip this file and open `index.html` in a web browser.
+Unzip this file and open `index.html` in a web browser.  The games can be distributed on an intranet, CD, USB drive, or any other storage system.
 
 ### Limitations
 
