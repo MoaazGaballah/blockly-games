@@ -6,6 +6,8 @@ All code is free and open source.
 
 **The games are at https://blockly-games.appspot.com/**
 
+Resources for teachers and developers:
+
 * [[Build]] - Download, build and run your own copy.
 * [[Offline]] - Download a copy for use without the Internet.
 * [Source](https://github.com/google/blockly-games) - Code repository (send pull requests here).
