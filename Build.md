@@ -1,4 +1,5 @@
-Developers of Blockly Games need to build the project in order to make changes.
+Developers of [Blockly Games](https://blockly-games.appspot.com/) need to build
+the project in order to make changes.
 
 ## Get the Code
 
@@ -16,7 +17,8 @@ Or just download a ZIP:
 
 ## Get the Dependencies
 
-Enter the Blockly Games directory you just created, and attempt to get and build the dependencies (Closure is the main one):
+Enter the Blockly Games directory you just created, and attempt to get and build
+the dependencies (Closure is the main one):
 
     cd blockly-games/
     make deps
@@ -26,7 +28,8 @@ If this works, great!  But it will probably die with this error:
     [javac] Compiling 375 source files to /home/fraser/blockly-games/closure-templates-read-only/build/classes
     [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
 
-In this case you need to edit `closure-templates-read-only/build.xml` and change all four instances of "1.6" to "1.7".  Here is the patch:
+In this case you need to edit `closure-templates-read-only/build.xml` and change
+all four instances of "1.6" to "1.7". Here is the patch:
 
     --- build.xml	(revision 28)
     +++ build.xml	(working copy)
@@ -63,13 +66,17 @@ The next step is to build all the English versions of the applications:
 
 ## Build all Languages
 
-Optionally, you might wish to build all the languages, not just English.  Be warned that this takes approximately *5 hours*, so this may be something you should do overnight.
+Optionally, you might wish to build all the languages, not just English. Be
+warned that this takes approximately *5 hours*, so this may be something you
+should do overnight.
 
     make languages
 
 ## Build one Game
 
-While developing a game, it is nice to be able to quickly recompile only the English version of a single game.  Here are the build commands for the existing games:
+While developing a game, it is nice to be able to quickly recompile only the
+English version of a single game. Here are the build commands for the existing
+games:
 
     make index-en
     make puzzle-en
@@ -85,12 +92,22 @@ The previously mentioned `make en` is just a shortcut for all the above commands
 
 ## Test Locally
 
-Point a browser at `blockly-games/appengine/index.html?lang=en` and you should see all the games.
+Point a browser at `blockly-games/appengine/index.html?lang=en` and you should
+see all the games.
 
-You may notice in the browser's console that there's a failed request for `file:///common/storage.js` on every game page.  That's normal, storage is only available when run on App Engine.
+You may notice in the browser's console that there's a failed request for
+`file:///common/storage.js` on every game page.  That's normal, storage is only
+available when run on App Engine.
 
 ## Debug Mode
 
-To avoid having to recompile after small changes, edit `appengine/common/boot.js` and change `compressed.js` to `uncompressed.js` near the end of that file.  Now you can just press reload in the browser to get the latest version after most changes.  Note that edits to the Closure Templates (`*.soy`) and changes to dependancies (`goog.require`) still require a recompile.
+To avoid having to recompile after small changes, edit
+`appengine/common/boot.js` and change `compressed.js` to `uncompressed.js` near
+the end of that file. Now you can just press reload in the browser to get the
+latest version after most changes. Note that edits to the Closure Templates
+(`*.soy`) and changes to dependancies (`goog.require`) still require a
+recompile.
 
-Do not use `uncompressed.js` for publicly-facing installations, since the browser needs to fetch hundreds of files and megabytes of data per page.  That's not something you want to do over a public network.
+Do not use `uncompressed.js` for publicly-facing installations, since the
+browser needs to fetch hundreds of files and megabytes of data per page. That's
+not something you want to do over a public network.

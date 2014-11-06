@@ -1,6 +1,8 @@
-![](https://blockly-games.appspot.com/index/title.png) Offline
+![](title-offline.png)
 
-Got limited or unreliable Internet?  Download a full copy of [Blockly Games](https://blockly-games.appspot.com/) below.  Choose your language (4MB compressed, 15MB uncompressed):
+Got limited or unreliable Internet?  Download a full copy of
+[Blockly Games](https://blockly-games.appspot.com/) using the links below.
+Choose your language (4MB compressed, 15MB uncompressed):
 
 * [Bahasa Melayu](https://github.com/google/blockly-games/blob/offline/generated/blockly-games-ms.zip?raw=true)
 * [Brezhoneg](https://github.com/google/blockly-games/blob/offline/generated/blockly-games-br.zip?raw=true)
@@ -43,12 +45,15 @@ Got limited or unreliable Internet?  Download a full copy of [Blockly Games](htt
 * [正體中文](https://github.com/google/blockly-games/blob/offline/generated/blockly-games-zh-hant.zip?raw=true)
 * [한국어](https://github.com/google/blockly-games/blob/offline/generated/blockly-games-ko.zip?raw=true)
 
-Unzip the downloaded file and open `index.html` in a web browser.  The games can be distributed on an intranet, CD, USB drive, or any other storage system.
+Unzip the downloaded file and open `index.html` in a web browser.  The games can
+be distributed on an intranet, CD, USB drive, or any other storage media.
 
 ### Limitations
 
-Running offline does eliminate some peripheral features:
+Using the online version of [Blockly Games](https://blockly-games.appspot.com/)
+is preferable since running offline eliminates some features:
 
-* Language is fixed and may not be changed using a dropdown menu.
-* Programs cannot be shared by exchanging links.
+* Language (English, Chinese, Hebrew, etc) is fixed and may not be changed using a dropdown menu.
+* User-created programs cannot be shared by exchanging links.
 * Turtle and Movie programs may not be submitted to the Reddit gallery.
+* Downloaded games do not benefit from the daily improvements made to online version.
