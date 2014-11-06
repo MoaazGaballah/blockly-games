@@ -1,4 +1,4 @@
-![](title-offline.png)
+![Blockly Games Offline](title-offline.png)
 
 Got limited or unreliable Internet?  Download a full copy of
 [Blockly Games](https://blockly-games.appspot.com/) using the links below.
