@@ -1,4 +1,4 @@
-![](title.png)
+![Blockly Games](title.png)
 
 * [[Build]] - Download, build and run your own copy.
 * [[Offline]] - Download a copy for use without the Internet.
