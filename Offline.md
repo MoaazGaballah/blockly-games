@@ -1,4 +1,6 @@
-Got limited or unreliable Internet?  You can download a full copy of [Blockly Games](https://blockly-games.appspot.com/) below.  Choose your language to download (4MB compressed, 15MB uncompressed):
+![](https://blockly-games.appspot.com/index/title.png) Offline
+
+Got limited or unreliable Internet?  Download a full copy of [Blockly Games](https://blockly-games.appspot.com/) below.  Choose your language (4MB compressed, 15MB uncompressed):
 
 * [Bahasa Melayu](https://github.com/google/blockly-games/blob/offline/generated/blockly-games-ms.zip?raw=true)
 * [Brezhoneg](https://github.com/google/blockly-games/blob/offline/generated/blockly-games-br.zip?raw=true)
