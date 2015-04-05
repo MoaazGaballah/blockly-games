@@ -103,7 +103,7 @@ available when run on App Engine.
 
 To avoid having to recompile after small changes, visit
 [/debug](https://blockly-games.appspot.com/debug)
-(or `debug.html` if being served directly off a file system)
+(or `blockly-games/appengine/debug.html` if being served directly off a file system)
 to switch to uncompressed mode.
 
 Now you can just press reload in the browser to get the
