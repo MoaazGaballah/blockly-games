@@ -101,13 +101,12 @@ available when run on App Engine.
 
 ## Debug Mode
 
-To avoid having to recompile after small changes, edit
-`appengine/common/boot.js` and change `compressed.js` to `uncompressed.js` near
-the end of that file. Now you can just press reload in the browser to get the
-latest version after most changes. Note that edits to the Closure Templates
-(`*.soy`) and changes to dependancies (`goog.require`) still require a
-recompile.
+To avoid having to recompile after small changes, visit
+[/debug](https://blockly-games.appspot.com/debug)
+(or `debug.html` if being served directly off a file system)
+to switch to uncompressed mode.
 
-Do not use `uncompressed.js` for publicly-facing installations, since the
-browser needs to fetch hundreds of files and megabytes of data per page. That's
-not something you want to do over a public network.
+Now you can just press reload in the browser to get the
+latest version after most changes. Note that edits to the Closure Templates
+(`*.soy`) and changes to dependencies (`goog.require`) still require a
+recompile.
