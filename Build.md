@@ -29,7 +29,7 @@ If this works, great!  But it will probably die with this error:
     [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
 
 In this case you need to edit `closure-templates-read-only/build.xml` and change
-all four instances of "1.6" to "1.7". Here is the patch:
+all four instances of "1.6" to "1.7" (or "1.8" - check `java -version`). Here is the patch:
 
     --- build.xml	(revision 28)
     +++ build.xml	(working copy)
