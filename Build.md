@@ -85,8 +85,8 @@ games:
     make turtle-en
     make movie-en
     make pond-docs-en
-    make pond-basic-en
-    make pond-advanced-en
+    make pond-tutor-en
+    make pond-duck-en
 
 The previously mentioned `make en` is just a shortcut for all the above commands.
 
