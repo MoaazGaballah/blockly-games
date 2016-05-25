@@ -23,41 +23,6 @@ the dependencies (Closure is the main one):
     cd blockly-games/
     make deps
 
-If this works, great!  But it will probably die with this error:
-
-    [javac] Compiling 375 source files to /home/fraser/blockly-games/closure-templates-read-only/build/classes
-    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
-
-In this case you need to edit `closure-templates-read-only/build.xml` and change
-all four instances of "1.6" to "1.7" (or "1.8" - check `java -version`). Here is the patch:
-
-    --- build.xml	(revision 28)
-    +++ build.xml	(working copy)
-    @@ -75,8 +75,8 @@
-         <!-- Java compilation. -->
-         <javac srcdir="${java.src.dir}:${build.genfiles.dir}"
-                destdir="${build.classes.dir}"
-    -           source="1.6"
-    -           target="1.6"
-    +           source="1.7"
-    +           target="1.7"
-                includeAntRuntime="true"
-                debug="${includeDebugInfo}">
-           <classpath refid="classpath.path" />
-    @@ -664,8 +664,8 @@
-         <mkdir dir="${build.testclasses.dir}" />
-         <javac srcdir="${java.tests.dir}"
-                destdir="${build.testclasses.dir}"
-    -           source="1.6"
-    -           target="1.6"
-    +           source="1.7"
-    +           target="1.7"
-                includeAntRuntime="false"
-                debug="${includeDebugInfo}">
-           <classpath refid="classpath.path" />
-
-Rerun `make deps`, and everything should build properly.
-
 ## Build English
 
 The next step is to build all the English versions of the applications:
