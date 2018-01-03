@@ -17,7 +17,7 @@ Or just download a ZIP:
 
 ## Get the Dependencies
 
-Enter the Blockly Games directory you just created, and attempt to get and build
+Enter the Blockly Games directory you just created, and get/build
 the dependencies (Closure is the main one):
 
     cd blockly-games/
@@ -28,6 +28,8 @@ the dependencies (Closure is the main one):
 The next step is to build all the English versions of the applications:
 
     make en
+
+Expect to see many compiler warnings, but there shouldn't be any errors.
 
 ## Build all Languages
 
@@ -49,6 +51,7 @@ games:
     make bird-en
     make turtle-en
     make movie-en
+    make music-en
     make pond-docs-en
     make pond-tutor-en
     make pond-duck-en
