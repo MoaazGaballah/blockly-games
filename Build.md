@@ -23,18 +23,20 @@ the dependencies (Closure is the main one):
     cd blockly-games/
     make deps
 
+If `make deps` fails with an error, try running it again and see if it gets farther.  Pulling code from Github can sometimes be flaky.
+
 ## Build English
 
 The next step is to build all the English versions of the applications:
 
     make en
 
-Expect to see many compiler warnings, but there shouldn't be any errors.
+There shouldn't be any errors.
 
 ## Build all Languages
 
 Optionally, you might wish to build all the languages, not just English. Be
-warned that this takes approximately *5 hours*, so this may be something you
+warned that this takes approximately *4 hours*, so this may be something you
 should do overnight.
 
     make languages
@@ -55,6 +57,7 @@ games:
     make pond-docs-en
     make pond-tutor-en
     make pond-duck-en
+    make gallery-en
 
 The previously mentioned `make en` is just a shortcut for all the above commands.
 
@@ -70,8 +73,8 @@ available when run on App Engine.
 ## Debug Mode
 
 To avoid having to recompile after small changes, visit
-[/debug](https://blockly-games.appspot.com/debug)
-(or `blockly-games/appengine/debug.html` if being served directly off a file system)
+[/admin](https://blockly-games.appspot.com/admin)
+(or `blockly-games/appengine/admin.html` if being served directly off a file system)
 to switch to uncompressed mode.
 
 Now you can just press reload in the browser to get the
